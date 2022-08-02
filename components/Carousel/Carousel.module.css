@@ -1,0 +1,176 @@
+.carousel {
+    background: #fff;
+    height: 100%;
+    min-height: 750px;
+}
+
+.slideContent {
+    padding: 120px 0;
+    min-height: 750px;
+}
+
+.slideContentTitle {
+    font-family: 'Bebas_Neue';
+    font-weight: 700;
+    font-size: 102px;
+    line-height: 90%;
+}
+
+.slideContentTitle span {
+    color: var(--main-primary-color);
+}
+
+.slide {
+    position: relative;
+    height: 100%;
+}
+
+.slideImg {
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+.slideImg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 750px solid #fff;
+    border-right: 180px solid transparent;
+    z-index: 1;
+}
+
+.carouselNav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 120px;
+    z-index: 99;
+}
+
+.prevBtn,
+.nextBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    position: relative;
+}
+
+.prevBtn:hover .btnArrow path,
+.nextBtn:hover .btnArrow path {
+    stroke: var(--main-primary-color);
+}
+
+.prevBtn .btnArrow {
+    transform: rotate(90deg);
+}
+.nextBtn .btnArrow {
+    transform: rotate(-90deg);
+}
+
+.nextBtnCircle,
+.nextBtnCircleAnim,
+.nextBtnCircleReverse {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    stroke-dashoffset: -32;
+    stroke-dasharray: 153;
+}
+
+.nextBtnCircle {
+    animation: path 3.3s forwards;
+}
+
+.nextBtnCircleAnim {
+    animation: path2 3.3s forwards;
+}
+
+.nextBtnCircleReverse {
+    left: 0px;
+    animation: pathrevers 3.3s forwards;
+}
+
+@-webkit-keyframes path {
+    from {
+        stroke-dashoffset: -125;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+    to {
+        stroke-dashoffset: 0;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+}
+@-webkit-keyframes path2 {
+    from {
+        stroke-dashoffset: -125;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+    to {
+        stroke-dashoffset: 0;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+}
+@-webkit-keyframes pathrevers {
+    from {
+        stroke-dashoffset: 0;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+    to {
+        stroke-dashoffset: -125;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+.slideDescription {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    max-width: 550px;
+}
+.ticker {
+    background: var(--main-black-color);
+}
+
+.tickerTextRed {
+    width: 50px !important;
+}
+
+.tickerText,
+.tickerTextRed {
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.tickerTextRed span {
+    color: var(--main-primary-color);
+}
+
+.ticker * {
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+}

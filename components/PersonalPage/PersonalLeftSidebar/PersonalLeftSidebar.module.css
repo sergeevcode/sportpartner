@@ -1,0 +1,61 @@
+.wrap {
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    padding: 40px;
+    margin-right: 40px;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #1366E2;
+    font-weight: 600;
+    font-size: 34.9375px;
+    line-height: 43px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.name {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 5px;
+}
+
+.settings {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #BDBDBD;
+    margin-bottom: 35px;
+}
+
+.links a {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.links a:last-child {
+    margin-bottom: 0;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links .active {
+    color: var(--main-primary-color);
+}

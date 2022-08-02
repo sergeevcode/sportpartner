@@ -1,0 +1,49 @@
+.catalogCard {
+    position: relative;
+    width: 100%;
+    max-width: 270px;
+    background: #E7E7E6;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 35px 31px 0;
+    margin-bottom: 40px;
+}
+
+.catalogCard:nth-child(2),
+.catalogCard:nth-child(4),
+.catalogCard:nth-child(6),
+.catalogCard:nth-child(8) {
+    position: relative;
+    bottom: -40px;
+    /*margin-bottom: -40px;*/
+}
+
+.catalogCard svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.catalogCard svg path {
+    transition: 0.1s all;
+}
+
+.catalogCard:hover svg path {
+    stroke: var(--main-primary-color);
+    opacity: 1;
+}
+
+.title {
+    height: 50px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin: 10px 0 25px;
+}

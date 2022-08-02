@@ -1,0 +1,126 @@
+.reviewsWrap h2 span {
+    color: var(--main-primary-color);
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 7px;
+}
+
+.score span {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: var(--main-primary-color);
+    margin-left: 10px;
+}
+
+.reviewsTitle {
+    margin-bottom: 50px;
+}
+
+.review {
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.review p {
+    margin: 0;
+    color: #131313;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.reviewTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.reviewInfo {
+    display: flex;
+    align-items: center;
+}
+
+.reviewLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #1366E2;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.reviewName {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #131313;
+    margin-right: 15px;
+}
+
+.reviewDate {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #BDBDBD;
+    margin-right: 30px;
+}
+
+.reviewBtn {
+    display: inline-flex;
+    align-items: center;
+    background: #F7F6F5;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 16px 13px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.reviewBtn span {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    margin-left: 15px;
+}
+
+.reviewBtn:hover {
+    color: #fff;
+    background: var(--main-primary-color);
+}
+
+.reviewBtn:hover path {
+    stroke: #fff;
+}
+
+.itemBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.itemBlock .itemName {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}

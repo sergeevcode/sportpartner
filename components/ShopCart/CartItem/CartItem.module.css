@@ -1,0 +1,156 @@
+.itemWrap {
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 155px;
+    min-width: 155px;
+    height: 155px;
+    margin-right: 50px;
+}
+
+.image img {
+    object-fit: contain;
+}
+
+.title {
+    padding-right: 50px;
+}
+
+.vendorCode {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #BDBDBD;
+    margin-bottom: 5px;
+}
+
+.itemTitle {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 130%;
+    color: #131313;
+    margin-bottom: 20px;
+}
+
+.modification {
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #BDBDBD;
+}
+
+.modification span {
+    color: #131313;
+    margin-right: 15px;
+}
+
+.price:not(.priceTotal) {
+    margin-right: 25px;
+}
+
+.price,
+.priceTotal {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #131313;
+}
+
+.priceTotal {
+    width: 120px;
+    text-align: center;
+}
+
+.price span {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: line-through;
+    color: #BDBDBD;
+    margin-bottom: 5px;
+}
+
+.cartCountBtn {
+    display: flex;
+    align-items: stretch;
+    padding: 15px 10px;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+}
+
+.cartCount {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 60px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.cartCountBtn > .counterBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.cartCountBtn > .counterBtn:hover path {
+    stroke: var(--main-primary-color);
+    fill: var(--main-primary-color);
+}
+
+.delete {
+    margin: 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.delete:hover {
+    background: rgba(230, 230, 230, 0.52);
+}
+
+.delete:hover path {
+    stroke: var(--main-primary-color);
+}
+
+.fslightboxModal {
+    color: #fff;
+}
+
+.closeBtn {
+    background: transparent;
+    border: 2px solid var(--main-primary-color);
+    color: var(--main-primary-color);
+    padding: 21px 40px 19px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    outline: none;
+    transition: 0.1s all;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    border: 2px solid var(--main-black-color);
+    color: var(--main-black-color);
+}

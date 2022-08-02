@@ -1,0 +1,51 @@
+.sliderCarouselWrap {
+    overflow: hidden;
+}
+
+.sliderContainer h2 {
+    font-family: 'Bebas_Neue';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 90%;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.sliderContainer h2 span {
+    color: var(--main-primary-color);
+}
+
+.prevBtn,
+.nextBtn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    z-index: 1;
+    width: 44px;
+    height: 44px;
+    background: var(--main-primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s background;
+}
+
+.prevBtn {
+    transform: rotate(90deg);
+    left: -84px;
+}
+
+.nextBtn {
+    transform: rotate(-90deg);
+    right: -84px;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+    background: var(--main-black-color);
+}
+
+.swiperWrap {
+    overflow: visible !important;
+}

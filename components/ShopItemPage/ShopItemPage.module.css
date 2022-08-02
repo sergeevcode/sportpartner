@@ -1,0 +1,231 @@
+.title {
+    font-family: 'Bebas_Neue';
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 105%;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.thumbs {
+    display: block;
+    width: 105px;
+    height: 465px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.thumbs .mySwiper {
+    height: 465px;
+}
+
+.swiperSlideItem {
+    background: #EFEFEF;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.swiperSlideItem img {
+    object-fit: cover;
+}
+
+.thumbs .swiperSlideItem {
+    opacity: 0.6;
+    transition: 0.2s opacity;
+}
+
+.thumbs .swiperSlideItem:hover {
+    opacity: 1;
+}
+
+.mainPhoto {
+    width: 450px;
+    height: 465px;
+}
+
+.mainPhoto .swiperSlideItem:hover {
+    cursor: zoom-in;
+}
+
+.info {
+    padding-left: 20px;
+}
+
+.cardBtns {
+    position: relative;
+    /*padding-left: 44px;*/
+}
+
+.cardProperties {
+    margin-bottom: 30px;
+}
+
+.weight,
+.weightActive {
+    display: block;
+    padding: 4px 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    /*margin-bottom: 10px;*/
+}
+
+.weightActive {
+    color: #fff;
+    background: var(--main-primary-color);
+    border: 1px solid var(--main-primary-color);
+    font-weight: 600;
+}
+
+.propertyTitle {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.artikul {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BDBDBD;
+}
+.cardPrice span {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BDBDBD;
+    text-decoration-line: line-through;
+    margin-bottom: 5px;
+}
+.cardPrice {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #131313;
+}
+.cardBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.brand {
+    background: #fff;
+    width: 87px;
+    height: 87px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.brandName {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--main-primary-color);
+    margin-left: 15px;
+}
+
+.brand img {
+    object-fit: contain;
+}
+
+.cartCountBtn {
+    display: flex;
+    align-items: stretch;
+    padding: 15px 10px;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+}
+
+.cartCount {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 60px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.cartCountBtn > .counterBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.cartCountBtn > .counterBtn:hover path {
+    stroke: var(--main-primary-color);
+    fill: var(--main-primary-color);
+}
+
+.cardBtns {
+    position: relative;
+}
+
+.addToCartBtn,
+.deleteFromCartBtn {
+    display: flex;
+    background: #E2132A;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.addToCartBtn:hover {
+    background: var(--main-black-color);
+}
+
+.deleteFromCartBtn {
+    background: transparent;
+    border: 1px solid var(--main-primary-color);
+}
+
+.addToCartBtnText {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.deleteFromCartBtn:hover {
+    background: var(--main-primary-color);
+}
+
+.deleteFromCartBtn .addToCartBtnText {
+    font-weight: 300;
+    color: var(--main-primary-color);
+    margin-left: 0;
+}
+.deleteFromCartBtn:hover .addToCartBtnText {
+    color: #fff;
+}
+
+.likeBtn {
+    position: absolute;
+    top: calc(50% + 2px);
+    left: -35px;
+    transform: translateY(-50%);
+    transition: 0.1s all;
+    cursor: pointer;
+}
+
+.likeBtn:hover {
+    transform: translateY(-50%) scale(1.2);
+}

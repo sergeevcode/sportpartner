@@ -1,0 +1,62 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table tr {
+    border-bottom: 1px solid #E6E6E6;
+    height: 1px;
+}
+
+.table td {
+    padding: 25px 0;
+}
+.table tr td:first-child {
+    color: #BDBDBD;
+}
+
+.table th {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+.table th span {
+    position: relative;
+}
+
+.table th span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    transform: translateY(-25%);
+    background: url('/formArrow.png') center no-repeat;
+    background-size: contain;
+    width: 9px;
+    height: 5px;
+}
+
+.table tr th:last-child,
+.table tr td:last-child {
+    width: 180px;
+}
+
+.authTitle {
+    font-family: 'Bebas_Neue';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 90%;
+    text-align: center;
+}
+
+.authForm {
+    margin-top: 30px;
+    margin-bottom: 90px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    padding: 20px 80px 40px;
+}

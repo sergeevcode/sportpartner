@@ -1,0 +1,12 @@
+.arrow {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.arrow svg {
+    margin-left: -10px;
+}
+
+.arrow svg:last-child {
+    margin-right: 10px;
+}
